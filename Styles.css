@@ -1,0 +1,129 @@
+body {
+  background-color: #6699ff;
+  font-family: "Helvetica", sans-serif;
+  color: purple;
+}
+nav ul {
+  background-color: tomato;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: MediumVioletRed;
+  border-width: 2px;
+  padding: 10px;
+  border-radius: 10px;
+}
+nav ul li {
+  color: white;
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: indigo;
+}
+nav ul li a:hover {
+  animation-name: colorchange;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorchange {
+  0% {
+    color: #00bfff;
+  }
+  25% {
+    color: #00ff7f;
+  }
+  50% {
+    color: #eeeeaf;
+  }
+  75% {
+    color: #eeafee;
+  }
+  100% {
+    color: #00bfff;
+  }
+}
+h1 {
+  color: white;
+  font-family: "Times New Roman", serif;
+}
+a:-webkit-any-link {
+  cursor: pointer;
+}
+table,
+th,
+td {
+  border: 1px solid HoneyDew;
+  border-collapse: collapse;
+}
+tr {
+  background-color: PaleTurquoise;
+}
+th,
+td {
+  vertical-align: top;
+  padding: 5px;
+  text-align: left;
+  color: purple;
+}
+p.about {
+  border-style: ridge;
+  text-align: center;
+  padding: 15px;
+}
+#frontpage {
+  background-image: linear-gradient(
+    rgb(178, 206, 254),
+    rgb(178, 206, 254),
+    rgb(186, 237, 145),
+    rgb(178, 206, 254)
+  );
+}
+.modify {
+  width: 100px;
+  padding: 20px;
+  border-style: solid;
+  border-radius: 100%;
+  border-width: 2px;
+  border-color: hsl(150, 100%, 98%);
+}
+.modify:hover {
+  animation-name: rollOver;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  border-color: hsl(218, 63%, 47%);
+  border: dashed;
+}
+@keyframes rollOver {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.topDivider {
+  border-top-style: solid;
+  border-top-color: #f5fffa;
+  border-top-width: 2px;
+  padding-bottom: 10px;
+}
+.picsmall {
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;
+  border-color: hsl(150, 100%, 98%);
+}
+.design {
+  color: brown;
+  padding: 10px;
+  border-style: solid;
+  background-color: lightskyblue;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: hsl(150, 100%, 98%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
